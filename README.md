@@ -1,61 +1,61 @@
 # Web Whiz
 
-Welcome to **Web Whiz**! This is a web-based application that allows users to take quizzes on various topics and test their knowledge. Built as a school project, this website demonstrates skills in frontend development, including HTML, CSS & JavaScript.
+Welkom bij **Web Whiz**! Dit is een webapplicatie waarmee gebruikers quizzen over verschillende onderwerpen kunnen maken en hun kennis kunnen testen. Deze website is gebouwd als schoolproject en demonstreert vaardigheden in frontend-ontwikkeling, waaronder HTML, CSS en JavaScript.
 
-## Table of Contents
+## Inhoudsopgave
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
+- [Functies](#functies)
+- [Gebruikte Talen](#talen)
+- [Gebruik](#gebruik)
+- [Projectstructuur](#project-structuur)
+- [Bijdragen](#bijdragen)
 
-## Features
+## Functies
 
-- **Interactive Quizzes**: Users can select from multiple quizzes and answer multiple-choice questions.
-- **Score Tracking**: Users receive instant feedback after submitting answers and can view their final score at the end.
-- **Timer**: Optional feature that sets a time limit for each quiz.
-- **Leaderboard**: Track high scores across quizzes (if implemented with backend support).
-- **Responsive Design**: Accessible on both desktop and mobile devices.
+- **Interactieve Quizzen**: Gebruikers kunnen kiezen uit meerdere quizzen en meerkeuzevragen beantwoorden.
+- **Score Bijhouden**: Gebruikers krijgen direct feedback nadat ze hun antwoorden hebben ingediend en kunnen hun eindscore aan het einde bekijken.
+- **Timer**: Optionele functie die een tijdslimiet instelt voor elke quiz.
+- **Scorebord**: Mogelijkheid om hoge scores voor verschillende quizzes bij te houden (indien geïmplementeerd met backend-ondersteuning).
+- **Responsief Ontwerp**: Toegankelijk op zowel desktop als mobiele apparaten.
 
-## Technologies Used
+## Gebruikte Talen
 
 - **Frontend**: HTML, CSS, JavaScript
 
-## Usage
+## Gebruik
 
-1. Launch the application.
-2. Select a quiz topic from the homepage.
-3. Answer each question by selecting an answer option.
-4. Submit the quiz to view your score.
+1. Start de applicatie.
+2. Selecteer een quizonderwerp op de homepage.
+3. Beantwoord elke vraag door een antwoordoptie te selecteren.
+4. Verstuur de quiz om je score te bekijken.
 
-## Project Structure
+## Projectstructuur
 
 ```plaintext
 Web Whiz/
 ├── Web Whiz
-│   ├── html/               # Static files
-│   ├── css/                # CSS files
-│   ├── js/                 # JavaScript files
-│   ├── assets/             # JPG files
-│   └── index.html          # Main HTML file
-└── README.md               # README file
+│   ├── html/               # Statische bestanden
+│   ├── css/                # CSS-bestanden
+│   ├── js/                 # JavaScript-bestanden
+│   ├── assets/             # Afbeeldingen
+│   └── index.html          # Hoofd HTML-bestand
+└── README.md               # README-bestand
 ```
 
 ## Screenshots
 
-### Homepage
-![Homepage Screenshot](https://cdn.discordapp.com/attachments/1300768520698859550/1300768551920992296/Home.png?ex=67220a9d&is=6720b91d&hm=7362259cb788ca426e92c842982d804249c0ce1b9790ca8656a57a77649677fe&)
+### Startpagina
+![Screenshot Startpagina](https://cdn.discordapp.com/attachments/1300768520698859550/1300768551920992296/Home.png?ex=67220a9d&is=6720b91d&hm=7362259cb788ca426e92c842982d804249c0ce1b9790ca8656a57a77649677fe&)
 
 ### Quiz Interface
-![Quiz Screenshot](https://cdn.discordapp.com/attachments/1300768520698859550/1300768552416055296/QuizInterface.png?ex=67220a9e&is=6720b91e&hm=191855265446062c186cfec065ddf52e6ece433b774ed434d55e0954ba39bae9&)
+![Screenshot Quiz](https://cdn.discordapp.com/attachments/1300768520698859550/1300768552416055296/QuizInterface.png?ex=67220a9e&is=6720b91e&hm=191855265446062c186cfec065ddf52e6ece433b774ed434d55e0954ba39bae9&)
 
-## Contributing
+## Bijdragen
 
-Contributions are welcome! Feel free to submit a pull request or open an issue to suggest improvements or report bugs.
+Bijdragen zijn welkom! Voel je vrij om een pull request in te dienen of een issue te openen om verbeteringen voor te stellen of bugs te melden.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a pull request
+1. Fork de repository
+2. Maak je feature branch (`git checkout -b feature/VerbazingwekkendeFeature`)
+3. Commit je wijzigingen (`git commit -m 'Voeg wat VerbazingwekkendeFeature toe'`)
+4. Push naar de branch (`git push origin feature/VerbazingwekkendeFeature`)
+5. Open een pull request

@@ -3,30 +3,30 @@
 // Questions array
 const questions = [
     {
-        question: "",
+        question: "Wie is de mannelijke hoofd acteur in de 2004 film, The Notebook?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "James Garner", correct: false },
+            { text: "Brad Pitt", correct: false },
+            { text: "Ryan Gosling", correct: true },
+            { text: "Leonardo DiCaprio", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wie regisseerde de film Inception?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Steven Spielberg", correct: false },
+            { text: "Quentin Tarantino", correct: false },
+            { text: "Christopher Nolan", correct: true },
+            { text: "Martin Scorsese", correct: false }
         ]
     },
     {
-        question: "",
+        question: "In welke film zegt het personage Forrest Gump: 'Life is like a box of chocolates?'",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Titanic", correct: false },
+            { text: "Forrest Gump", correct: true },
+            { text: "Pulp Fiction", correct: false },
+            { text: "The Green Mile", correct: false }
         ]
     },
     {

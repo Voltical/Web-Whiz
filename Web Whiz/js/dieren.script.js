@@ -21,12 +21,75 @@ const questions = [
         ]
     },
     {
-        question: "Laatste vraag",
+        question: "Welk dier staat bekend om het veranderen van kleur voor camouflage?",
         answers: [
-            { text: "1", correct: true },
-            { text: "2", correct: false },
-            { text: "3", correct: false },
-            { text: "4", correct: false }
+            { text: "Tijgerhaai", correct: false },
+            { text: "Kreeft", correct: false },
+            { text: "Kameleon", correct: true },
+            { text: "Papegaai", correct: false }
+        ]
+    },
+    {
+        question: "Wat voor soort dier is een orka eigenlijk?",
+        answers: [
+            { text: "Haai", correct: false },
+            { text: "Dolfijn", correct: true },
+            { text: "Walvis", correct: false },
+            { text: "Reuzenschildpad", correct: false }
+        ]
+    },
+    {
+        question: "Welke vogel kan achteruit vliegen?",
+        answers: [
+            { text: "Adelaar", correct: false },
+            { text: "Papegaai", correct: false },
+            { text: "Kolibrie", correct: true },
+            { text: "Uil", correct: false }
+        ]
+    },
+    {
+        question: "Hoe noemt men een groep leeuwen?",
+        answers: [
+            { text: "Troep", correct: true },
+            { text: "Zwerm", correct: false },
+            { text: "School", correct: false },
+            { text: "Kolonie", correct: false }
+        ]
+    },
+    {
+        question: "Wat is het grootste dier dat ooit heeft geleefd?",
+        answers: [
+            { text: "Olifant", correct: false },
+            { text: "Blauwe vinvis", correct: true },
+            { text: "Walvishaai", correct: false },
+            { text: "Tyrannosaurus rex", correct: false }
+        ]
+    },
+    {
+        question: "Hoe lang kan een volwassen krokodil onder water blijven zonder lucht te halen?",
+        answers: [
+            { text: "5 minuten", correct: false },
+            { text: "15 minuten", correct: false },
+            { text: "1 uur", correct: false },
+            { text: "2 uur", correct: true }
+        ]
+    },
+    {
+        question: "Welke vogel heeft de grootste spanwijdte?",
+        answers: [
+            { text: "Struisvogel", correct: false },
+            { text: "Amerikaanse zeearend", correct: false },
+            { text: "Albatros", correct: true },
+            { text: "Valk", correct: false }
+        ]
+    },
+    {
+        question: "Welk zoogdier kan vliegen?",
+        answers: [
+            { text: "Vleermuis", correct: true },
+            { text: "Pinguïn", correct: false },
+            { text: "Kangeroe", correct: false },
+            { text: "Struisvogel", correct: false }
         ]
     },
 ];

@@ -12,21 +12,84 @@ const questions = [
         ]
     },
     {
-        question: "Welke vogel kan niet vliegen?",
+        question: "Uit hoeveel spelers bestaat een team?",
         answers: [
-            { text: "Pinguïn", correct: true },
-            { text: "Arend", correct: false },
-            { text: "Spreeuw", correct: false },
-            { text: "Kraai", correct: false }
+            { text: "10 spelers", correct: true },
+            { text: "11 spelers", correct: false },
+            { text: "12 spelers", correct: false },
+            { text: "13 spelers", correct: false }
         ]
     },
     {
-        question: "Laatste vraag",
+        question: "Wat is de maximum aantal wisselspelers een team mag gebruiken?",
         answers: [
-            { text: "1", correct: true },
-            { text: "2", correct: false },
-            { text: "3", correct: false },
-            { text: "4", correct: false }
+            { text: "2 wisselspelers", correct: false },
+            { text: "3 wisselspelers", correct: false },
+            { text: "4 wisselspelers", correct: false },
+            { text: "5 wisselspelers", correct: true }
+        ]
+    },
+    {
+        question: "Wie is de all-time topscorer van het Nederlands elftal?",
+        answers: [
+            { text: "Robin van Persie", correct: true },
+            { text: "Cody Gakpo", correct: false },
+            { text: "Virgil van Dijk", correct: false },
+            { text: "Xavi Simons", correct: false }
+        ]
+    },
+    {
+        question: "Welk land heeft het vaakst de EK gewonnen?",
+        answers: [
+            { text: "Duitsland", correct: true },
+            { text: "Spanje", correct: false },
+            { text: "Frankrijk", correct: false },
+            { text: "Italië", correct: false }
+        ]
+    },
+    {
+        question: "In welk jaar werd de UEFA Champions League voor het eerst gespeeld?",
+        answers: [
+            { text: "1954", correct: false },
+            { text: "1955", correct: true },
+            { text: "1956", correct: false },
+            { text: "1957", correct: false } 
+        ]
+    },
+    {
+        question: "Om de hoeveel jaar wordt er een EK georganiseerd?",
+        answers: [
+            { text: "2 jaar", correct: false },
+            { text: "4 jaar", correct: true },
+            { text: "6 jaar ", correct: false },
+            { text: "8 jaar", correct: false } 
+        ]
+    },
+    {
+        question: "Welke club heeft het meest aantal Champions League titels?",
+        answers: [
+            { text: "2 jaar", correct: false },
+            { text: "4 jaar", correct: true },
+            { text: "6 jaar ", correct: false },
+            { text: "8 jaar", correct: false } 
+        ]
+    },
+    {
+        question: "Wie was de topdoelpuntenmaker in de Premier League in het seizoen 2020-2021?",
+        answers: [
+            { text: "Dominic Calvert-Lewin", correct: false },
+            { text: "Mohamed Salah", correct: true },
+            { text: "Harry Kane", correct: false },
+            { text: "Bruno Fernandes", correct: false }
+        ]
+    },
+    {
+        question: "Wie was de aanvoerder van het Nederlands elftal tijdens het WK in 2010?",
+        answers: [
+            { text: "Arjen Robben", correct: false },
+            { text: "Virgil van Dijk", correct: false },
+            { text: "Giovanni van Bronkhorst", correct: true },
+            { text: "Ronald de Boer", correct: false }
         ]
     },
 ];

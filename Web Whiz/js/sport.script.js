@@ -3,12 +3,12 @@
 // Questions array
 const questions = [
     {
-        question: "Wat is het grootste landdier?",
+        question: "Hoe breed moet een voetbalveld minimaal zijn?",
         answers: [
-            { text: "Olifant", correct: true },
-            { text: "Giraffe", correct: false },
-            { text: "Leeuw", correct: false },
-            { text: "Zebra", correct: false }
+            { text: "50 meter", correct: false },
+            { text: "60 meter", correct: false },
+            { text: "62 meter", correct: false },
+            { text: "64 meter", correct: true }
         ]
     },
     {

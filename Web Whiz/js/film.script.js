@@ -30,7 +30,7 @@ const questions = [
         ]
     },
     {
-        question: "",
+        question: "Wat is de meest bekende film gemaakt door Disney?",
         answers: [
             { text: "", correct: false },
             { text: "", correct: false },

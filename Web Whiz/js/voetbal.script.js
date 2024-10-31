@@ -96,6 +96,7 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let correctAnswersCount = 0; // Om bij te houden hoeveel juiste antwoorden er zijn gegeven
+let answeredQuestions = Array(questions.length).fill(false); // Bijhouden of vragen correct beantwoord zijn
 
 // DOM elementen
 const questionElement = document.getElementById('question');
@@ -109,7 +110,8 @@ const restartButton = document.getElementById('restart-btn'); // Opnieuw spelen 
 // Start de quiz
 function startQuiz() {
     currentQuestionIndex = 0;
-    correctAnswersCount = 0; // Reset correct answers count
+    correctAnswersCount = 0; 
+    answeredQuestions.fill(false); // Reset answeredQuestions bij start
     showQuestion(questions[currentQuestionIndex]);
 }
 
@@ -130,14 +132,15 @@ function showQuestion(question) {
 function selectAnswer(answer, selectedButton) {
     const correct = answer.correct;
 
-    // Als het correct is, maak de knop groen
-    if (correct) {
-        selectedButton.classList.add('correct'); // Voeg correct klasse toe
-        correctAnswersCount++; // Verhoog de juiste antwoorden
-        document.getElementById('go-back-btn').style.display="none"; // Verberg Ga Terug knop
-    } else {
-        selectedButton.classList.add('incorrect'); // Markeer incorrect antwoord
-        document.getElementById('go-back-btn').style.display="block"; // Toon de Ga Terug knop
+    // Controleer of het antwoord correct is en nog niet eerder goed beantwoord is
+    if (correct && !answeredQuestions[currentQuestionIndex]) {
+        selectedButton.classList.add('correct');
+        correctAnswersCount++;
+        answeredQuestions[currentQuestionIndex] = true; // Markeer vraag als correct beantwoord
+        document.getElementById('go-back-btn').style.display="none";
+    } else if (!correct) {
+        selectedButton.classList.add('incorrect');
+        document.getElementById('go-back-btn').style.display="block";
     }
     
     // Schakel alle knoppen uit na selectie
@@ -188,13 +191,17 @@ function restartQuiz() {
 // Event listeners
 nextButton.addEventListener('click', nextQuestion);
 goBackButton.addEventListener('click', () => { 
-    currentQuestionIndex--; // Ga terug naar de vorige vraag
-    if (currentQuestionIndex >= 0) {
-        showQuestion(questions[currentQuestionIndex]); // Toon de vorige vraag
-        document.getElementById('next-btn').style.display="none"; // Verberg de volgende knop
-        document.getElementById('go-back-btn').style.display="none"; // Verberg Ga Terug knop
+    showQuestion(questions[currentQuestionIndex]); // Toon dezelfde vraag opnieuw
+    document.getElementById('next-btn').style.display="none";
+    document.getElementById('go-back-btn').style.display="none";
+
+    // Verwijder een punt als de vraag eerder correct was beantwoord
+    if (answeredQuestions[currentQuestionIndex]) {
+        correctAnswersCount--; 
+        answeredQuestions[currentQuestionIndex] = false; // Reset correct antwoord status
     }
 });
+
 restartButton.addEventListener('click', restartQuiz); // Voeg event listener toe voor de opnieuw spelen knop
 
 // Start de quiz wanneer de pagina laadt

@@ -3,93 +3,93 @@
 // Questions array
 const questions = [
     {
-        question: "",
+        question: "Wie is de ontwikkelaar van Dark souls?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Bethesda", correct: false },
+            { text: "FromSoftware", correct: true },
+            { text: "Blizzard", correct: false },
+            { text: "Square Enix", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat was de release date van Minecraft?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "2009", correct: true },
+            { text: "2008", correct: false },
+            { text: "2010", correct: false },
+            { text: "2007", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat was de release date van Valorant?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "2018", correct: false },
+            { text: "2019", correct: false },
+            { text: "2020", correct: true },
+            { text: "2021", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is de naam van de stad in Grand Theft Auto V?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Liberty City", correct: false },
+            { text: "Vice City", correct: false },
+            { text: "Los Santos", correct: true },
+            { text: "San Andreas", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat was de release date van League of Legends?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "2008", correct: false },
+            { text: "2009", correct: true },
+            { text: "2010", correct: false },
+            { text: "2007", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wie is de hoofdpersoon in God of War?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Zeus", correct: false },
+            { text: "Kratos", correct: true },
+            { text: "Atreus", correct: false },
+            { text: "Hades", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke van de onderstaande games is een MMO (massively multiplayer game)?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "World of Warcraft", correct: true },
+            { text: "Fortnite", correct: false },
+            { text: "Heartstone", correct: false },
+            { text: "Call of Duty", correct: false }
         ]
     },
     {
-        question: "",
+        question: "wanneer was de eerste Assasin's creed uitgebracht?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "2005", correct: false },
+            { text: "2006", correct: false },
+            { text: "2007", correct: true },
+            { text: "2008", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke van de onderstaande games is een horrorgame?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Resident Evil", correct: true },
+            { text: "God of War", correct: false },
+            { text: "Rust", correct: false },
+            { text: "Apex Legends", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Hoe veel Halo games bestaan er?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "4", correct: false },
+            { text: "5", correct: false },
+            { text: "6", correct: true },
+            { text: "7", correct: false }
         ]
     },
 ];

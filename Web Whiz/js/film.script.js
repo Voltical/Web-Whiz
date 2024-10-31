@@ -32,64 +32,64 @@ const questions = [
     {
         question: "Wat is de meest bekende film gemaakt door Disney?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "De kleine zeemeermin", correct: false },
+            { text: "De leeuwenkoning", correct: true },
+            { text: "Belle en het beest", correct: false },
+            { text: "Peter Pan", correct: false }
         ]
     },
     {
-        question: "",
+        question: "In welke film zinkt een boot door een grote ijsberg?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Titanic", correct: true },
+            { text: "Frozen", correct: false },
+            { text: "Jaws", correct: false },
+            { text: "Moana", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welk horror character staat bekend om het gebruiken van een kettingzaag?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Ghostface", correct: false },
+            { text: "Jason Voorhees", correct: false },
+            { text: "Michael Myers", correct: false },
+            { text: "Leatherface", correct: true }
         ]
     },
     {
-        question: "",
+        question: "In welk jaar kwam de orginele Scream uit?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "1998", correct: false },
+            { text: "1991", correct: false },
+            { text: "1995", correct: false },
+            { text: "1996", correct: true }
         ]
     },
     {
-        question: "",
+        question: "In welke van de volgende komedies speelt Kevin Hart?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Bon Bini Holland", correct: false },
+            { text: "Death at a funeral", correct: true },
+            { text: "21 Jump street", correct: false },
+            { text: "Ted", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke van de volgende films heeft een televisieseries gekregen?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Jurrasic Park", correct: true },
+            { text: "Deadpool", correct: false },
+            { text: "Oppenheimer", correct: false },
+            { text: "Jumanji: Welcome to the jungle", correct: false }
         ]
     },
     {
-        question: "",
+        question: "In welke film heeft Dwayne johnson GEEN rol?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Jumanji: The next level", correct: false },
+            { text: "Red Notice", correct: false },
+            { text: "Bad Boys: Ride or Die", correct: true },
+            { text: "Black Adam", correct: false }
         ]
     },
 ];

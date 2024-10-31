@@ -3,93 +3,93 @@
 // Questions array
 const questions = [
     {
-        question: "",
+        question: "Welke Britse band schreef het nummer 'Bohemian Rhapsody'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "The Beatles", correct: false },
+            { text: "Pink Floyd", correct: false },
+            { text: "Queen", correct: true },
+            { text: "Led Zeppelin", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wie zong 'Thriller', een van de best verkochte nummers aller tijden?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Prince", correct: false },
+            { text: "Michael Jackson", correct: true },
+            { text: "Lionel Richie", correct: false },
+            { text: "Stevie Wonder", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke artiest staat bekend als 'The Queen of Pop'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Madonna", correct: true },
+            { text: "Whitney Houston", correct: false },
+            { text: "Beyoncé", correct: false },
+            { text: "Shakira", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is het debuutalbum van Adele?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "21", correct: false },
+            { text: "25", correct: false },
+            { text: "19", correct: true },
+            { text: "'Hello'", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wie was de leadzanger van Nirvana?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Eddie Vedder", correct: false },
+            { text: "Kurt Cobain", correct: true },
+            { text: "Billy Corgan", correct: false },
+            { text: "Chris Cornell", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wie was de drummer van Nirvana voordat hij frontman werd van de Foo Fighters?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Chad Smith", correct: false },
+            { text: "Taylor Hawkins", correct: false },
+            { text: "Dave Grohl", correct: true },
+            { text: "Travis Barker", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welk album van Nirvana bevat de hits 'Smells Like Teen Spirit' en 'Come as You Are'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Bleach", correct: false },
+            { text: "In Utero", correct: false },
+            { text: "Nevermind", correct: true },
+            { text: "MTV Unplugged in New York", correct: false }
         ]
     },
     {
-        question: "",
+        question: "In welke Amerikaanse staat is de band Slipknot opgericht?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Californië", correct: false },
+            { text: "Iowa", correct: true },
+            { text: "Texas", correct: false },
+            { text: "New York", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke band staat bekend om het dragen van maskers en hun intense live-optredens?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Nirvana", correct: false },
+            { text: "Metallica", correct: false },
+            { text: "Slipknot", correct: true },
+            { text: "Korn", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wie is de leadzanger van de band Metallica, bekend om nummers als 'Enter Sandman' en 'Master of Puppets'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "James Hetfield", correct: true },
+            { text: "Corey Taylor", correct: false },
+            { text: "Kurt Kobain", correct: false },
+            { text: "Rob Zombie", correct: false }
         ]
     },
 ];

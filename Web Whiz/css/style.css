@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: inter;
     box-sizing: border-box;
 }
 .background {
@@ -9,24 +9,25 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(2, 0, 1, 0.886) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: url(../assets/image\ 3.png);
 }
 
 /* App Interface */
 .main {
-    background: #fff;
-    width: 90%;
-    max-width: 600px;
+    background: #ffffff30;
+    width: 80%;
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
     height: 600px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 .main h1 {
     font-size: 25px;
-    color: #f96800;
+    color: #ffffff;
     font-weight: 600;
     border-bottom: 4px solid #333;
     padding-bottom: 30px;
@@ -36,13 +37,12 @@
 
 .buttons {
     padding: 20px 0;
-    width: 30%;
+    width: 150px;
     float: left;
-    margin-right: 30px;
 }
 .buttons h2 {
     font-size: 20px;
-    color: #ff6a00;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -53,26 +53,27 @@
     width: 51%;
     float: right;
     margin-right: 8%;
+    color: #fff;
 }
 .inhoud h2 {
     font-size: 20px;
-    color: #ff6a00;
+    color: #fff;
     font-weight: 600;
 }
 .inhoud p {
     margin-top: 10px;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     border-radius: 4px;
     text-decoration: none;
     padding: 1%;
 }
 .inhoud a {
     text-decoration: none;
-    color: #001e4d;
+    color: #fff;
     transition: all 0.3s;
 }
 .inhoud a:hover {
-    color: #ff6a00;
+    color: #000;
 }
 .inhoud .contact {
     padding-top: 10px;
@@ -82,32 +83,22 @@
 /* Buttons*/
 
 .btn {
-    background: #fff;
-    color: #222;
+    background: #ffffff30;
+    color: #ffffff;
     font-weight: 500;
-    width: 100%;
+    width: 80px;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 .btn:hover {
     background: #ff6a00;
     color: #fff;
-}
-#next-btn {
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
 }
 
 /* Animations */

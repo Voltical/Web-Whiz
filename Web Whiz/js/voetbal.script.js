@@ -68,7 +68,7 @@ const questions = [
     {
         question: "Welke club heeft het meest aantal Champions League titels?",
         answers: [
-            { text: "Real Madrid jaar", correct: true },
+            { text: "Real Madrid", correct: true },
             { text: "Liverpool", correct: false },
             { text: "Bayern München", correct: false },
             { text: "Manchester United", correct: false } 

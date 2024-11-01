@@ -191,19 +191,17 @@ function restartQuiz() {
 // Event listeners
 nextButton.addEventListener('click', nextQuestion);
 goBackButton.addEventListener('click', () => { 
-    currentQuestionIndex--;
-    if (currentQuestionIndex >= 0) {
-        showQuestion(questions[currentQuestionIndex]);
-        document.getElementById('next-btn').style.display="none";
-        document.getElementById('go-back-btn').style.display="none";
+    showQuestion(questions[currentQuestionIndex]); // Toon dezelfde vraag opnieuw
+    document.getElementById('next-btn').style.display="none";
+    document.getElementById('go-back-btn').style.display="none";
 
-        // Verwijder correct antwoord als vraag eerder goed was beantwoord
-        if (answeredQuestions[currentQuestionIndex]) {
-            correctAnswersCount--; 
-            answeredQuestions[currentQuestionIndex] = false; 
-        }
+    // Verwijder een punt als de vraag eerder correct was beantwoord
+    if (answeredQuestions[currentQuestionIndex]) {
+        correctAnswersCount--; 
+        answeredQuestions[currentQuestionIndex] = false; // Reset correct antwoord status
     }
 });
+
 restartButton.addEventListener('click', restartQuiz); // Voeg event listener toe voor de opnieuw spelen knop
 
 // Start de quiz wanneer de pagina laadt

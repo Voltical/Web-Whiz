@@ -3,93 +3,93 @@
 // Questions array
 const questions = [
     {
-        question: "",
+        question: "Welke van de volgende is een voorbeeld van een open-source software?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Microsoft Word", correct: false },
+            { text: "Adobe Photoshop", correct: false },
+            { text: "Linux", correct: true },
+            { text: "Windows", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is de functie van een database?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Het uitvoeren van rekenkundige bewerkingen", correct: false },
+            { text: "Het opslaan en beheren van gegevens", correct: true },
+            { text: "Het ontwerpen van softwareinterfaces", correct: false },
+            { text: "Het communiceren met hardware", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat betekend 'debugging'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Het verbeteren van de gebruikersinterface", correct: false },
+            { text: "Het verwijderen van fouten in de code", correct: true },
+            { text: "Het versnellen van programmatuur", correct: false },
+            { text: "Het maken van back-ups van gegevens", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is een 'virtual machine'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Een fysieke computer", correct: false },
+            { text: "Een softwarematige simulatie van een computer", correct: true },
+            { text: "Een type cloudopslag", correct: false },
+            { text: "Een beveiligingsprotocol", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke van de volgende talen is een op objecten gebaseerde programmeertaal?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "C", correct: false },
+            { text: "Java", correct: true },
+            { text: "Assembly", correct: false },
+            { text: "HTML", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is de 'Cloud storage'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Opslag van gegevens op lokale apparaten", correct: false },
+            { text: "Opslag van gegevens op externe servers via internet", correct: true },
+            { text: "Tijdelijke opslag voor snelle toegang", correct: false },
+            { text: "Opslag van gegevens op een fysieke schijf", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat betekend 'open-source software'?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Software waarvan de broncode vrij beschikbaar is voor iedereen", correct: true },
+            { text: "Software die alleen door specifieke gebruikers kan worden gewijzigd", correct: false },
+            { text: "Software die alleen kan worden gekocht", correct: false },
+            { text: "Software die enkel offline kan worden gebruikt", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Welke van de volgende is een populaire versiebeheertool?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Trello", correct: false },
+            { text: "GitHub", correct: true },
+            { text: "Excel", correct: false },
+            { text: "Slack", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is de functie van een server?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Het uitvoeren van code op de client", correct: false },
+            { text: "Het opslaan en beheren van gegevens en applicaties", correct: true },
+            { text: "Het ontwerpen van gebruikersinterfaces", correct: false },
+            { text: "Het optimaliseren van netwerkprestaties", correct: false }
         ]
     },
     {
-        question: "",
+        question: "Wat is een IP-adres?",
         answers: [
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false },
-            { text: "", correct: false }
+            { text: "Een beveiligingsprotocol", correct: false },
+            { text: "Een unieke identificatie voor een apparaat op een netwerk", correct: true },
+            { text: "Een type softwaretoepassing", correct: false },
+            { text: "Een programmeertaal", correct: false }
         ]
     },
 ];

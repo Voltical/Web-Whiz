@@ -14,8 +14,8 @@ const questions = [
     {
         question: "Uit hoeveel spelers bestaat een team?",
         answers: [
-            { text: "10 spelers", correct: true },
-            { text: "11 spelers", correct: false },
+            { text: "10 spelers", correct: false },
+            { text: "11 spelers", correct: true },
             { text: "12 spelers", correct: false },
             { text: "13 spelers", correct: false }
         ]
@@ -68,7 +68,7 @@ const questions = [
     {
         question: "Welke club heeft het meest aantal Champions League titels?",
         answers: [
-            { text: "Real Madrid jaar", correct: true },
+            { text: "Real Madrid", correct: true },
             { text: "Liverpool", correct: false },
             { text: "Bayern München", correct: false },
             { text: "Manchester United", correct: false } 

@@ -11,6 +11,7 @@
     overflow: hidden;
     background: rgb(216,0,95);
     background: linear-gradient(135deg, rgba(216,0,95,1) 10%, rgba(215,68,0,1) 100%);
+    z-index: 0;
 }
 
 /* App Interface */
@@ -30,12 +31,17 @@
     padding-bottom: 30px;
 }
 
+.app, .btn, .quiz {
+    z-index: 2;
+    position: relative;
+}
+
 /* Quiz */
 .quiz {
     padding: 20px 0;
 }
 .quiz h2 {
-    font-size: 10px;
+    font-size: 20px;
     color: #001e4d;
     font-weight: 600;
 }
@@ -60,25 +66,25 @@
 }
 
 .correct {
-    background-color: #4CAF50; /* Green for correct answers */
-    color: white; /* White text */
+    background-color: #4CAF50; /* Groen voor goede antwoorden */
+    color: white; /* Witte text */
 }
 
 .incorrect {
-    background-color: #f44336; /* Red for incorrect answers */
-    color: white; /* White text */
+    background-color: #f44336; /* Rood voor foute antwoorden */
+    color: white; /* Witte text */
 }
 .correct:hover {
-    background-color: #45a049 !important; /* Use the same hover color for correct answers */
+    background-color: #45a049 !important; /* Donker groen voor goede antwoorden on hover */
 }
 
 .incorrect:hover {
-    background-color: #d32f2f !important; /* Slightly darker red for incorrect answers on hover */
+    background-color: #d32f2f !important; /* Donker rood voor foute antwoorden on hover */
 }
 
 #next-btn {
-    background: #001e4d;
-    color: #fff;
+    background: #001e4d; /* Zwart achtergrond */
+    color: #fff; 
     font-weight: 500;
     width: 150px;
     border: 0;
@@ -122,6 +128,8 @@
     height: 60px;
     background-color: transparent;
     border: 6px solid rgba(255,255,255,0.8);
+    z-index: 1;
+    pointer-events: none;
 }
 .box div:nth-child(1) {
     top: 12%;

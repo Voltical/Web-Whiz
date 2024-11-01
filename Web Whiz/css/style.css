@@ -10,6 +10,17 @@
     width: 100%;
     overflow: hidden;
     background: url(../assets/image\ 3.png);
+    z-index: 0;
+}
+.background img {
+    position: fixed; /* Fixes the image in place relative to the viewport */
+    bottom: 0; /* Positions it at the bottom of the page */
+    left: 30%; /* Centers the image horizontally */
+    transform: translateX(-50%); /* Centers the image exactly */
+    z-index: 100; /* Ensures the image is on top of other elements */
+    width: 30%; /* Adjust as necessary to fit the width you need */
+    max-width: 100%; /* Prevents it from stretching beyond viewport width */
+    pointer-events: none; /* Allows users to click on elements in front of the image */
 }
 
 /* App Container */
@@ -31,6 +42,10 @@
     font-weight: 600;
     border-bottom: 4px solid #fff;
     padding-bottom: 30px;
+}
+.main, .buttons, .inhoud {
+    z-index: 2;
+    position: relative;
 }
 
 /* Knoppen */
@@ -96,13 +111,15 @@
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
     border: none;
+    margin: 10px;
 }
 .btn:hover {
     background: #fff;
     color: #000;
 }
 
-#more {
+#readmore {
+    padding-top: px;
     padding: 3px;
     font-size: 15px;
     border: none;
@@ -119,6 +136,8 @@
     height: 60px;
     background-color: transparent;
     border: 6px solid rgba(255,255,255,0.8);
+    z-index: 1;
+    pointer-events: none;
 }
 .box div:nth-child(1) {
     top: 12%;

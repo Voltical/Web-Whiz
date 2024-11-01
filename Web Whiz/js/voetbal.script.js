@@ -68,10 +68,10 @@ const questions = [
     {
         question: "Welke club heeft het meest aantal Champions League titels?",
         answers: [
-            { text: "2 jaar", correct: false },
-            { text: "4 jaar", correct: true },
-            { text: "6 jaar ", correct: false },
-            { text: "8 jaar", correct: false } 
+            { text: "Real Madrid jaar", correct: true },
+            { text: "Liverpool", correct: false },
+            { text: "Bayern München", correct: false },
+            { text: "Manchester United", correct: false } 
         ]
     },
     {

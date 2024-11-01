@@ -3,7 +3,7 @@
 // Questions array
 const questions = [
     {
-        question: "Wie is de ontwikkelaar van Dark souls?",
+        question: "Wie is de ontwikkelaar van Dark Souls?",
         answers: [
             { text: "Bethesda", correct: false },
             { text: "FromSoftware", correct: true },
@@ -66,7 +66,7 @@ const questions = [
         ]
     },
     {
-        question: "wanneer was de eerste Assasin's creed uitgebracht?",
+        question: "wanneer was de eerste Assasin's Creed uitgebracht?",
         answers: [
             { text: "2005", correct: false },
             { text: "2006", correct: false },
@@ -84,7 +84,7 @@ const questions = [
         ]
     },
     {
-        question: "Hoe veel Halo games bestaan er?",
+        question: "Hoeveel Halo games bestaan er?",
         answers: [
             { text: "4", correct: false },
             { text: "5", correct: false },

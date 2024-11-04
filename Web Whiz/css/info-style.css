@@ -1,8 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%); /* Gradient background for the body */
 }
 
 .background {
@@ -10,97 +14,109 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: url(../assets/image\ 3.png) no-repeat center center/cover;
+    z-index: 0;
 }
 
+.background img {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 25%;
+    max-width: 100%;
+    opacity: 0.8; /* Slight opacity for a subtle effect */
+    pointer-events: none;
+}
+
+/* App Container */
 .main {
-    background: #fff;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); /* More transparent background */
+    width: 85%;
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px;
     text-align: center;
-    height: 600px;
-}
-.main h1 {
-    font-size: 25px;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 4px solid #333;
-    padding-bottom: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+    backdrop-filter: blur(15px); /* Enhanced blur effect */
 }
 
-.img-container {
-    background: #ff0000;
+h1 {
+    font-size: 28px; /* Larger font size */
+    color: #fff;
+    font-weight: 700; /* Bold weight for emphasis */
+    border-bottom: 4px solid #fff; /* Unique color for the border */
+    padding-bottom: 20px;
+    margin-bottom: 20px; /* Margin for spacing */
 }
 
-/* Animations */
+p {
+    font-size: 18px; /* Increased size for better readability */
+    color: #fff;
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 20px 0;
+    text-align: left; /* Align text left for a different feel */
+}
+
+/* Box for animations */
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Allow clicks to pass through */
+}
 
 .box div {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 70px; /* Increased size for visibility */
+    height: 70px;
     background-color: transparent;
-    border: 6px solid rgba(255,255,255,0.8);
+    border: 4px solid rgba(255, 255, 255, 0.6); /* Slightly softer border */
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 50%; /* Rounded boxes */
+    animation: animate 10s linear infinite; /* Default animation */
 }
-.box div:nth-child(1) {
-    top: 12%;
-    left: 42%;
-    animation: animate 10s linear infinite;
-}
-.box div:nth-child(2) {
-    top: 70%;
-    left: 50%;
-    animation: animate 7s linear infinite;
-}
-.box div:nth-child(3) {
-    top: 17%;
-    left: 6%;
-    animation: animate 9s linear infinite;
-}
-.box div:nth-child(4) {
-    top: 20%;
-    left: 60%;
-    animation: animate 10s linear infinite;
-}
-.box div:nth-child(5) {
-    top: 67%;
-    left: 10%;
-    animation: animate 6s linear infinite;
-}
-.box div:nth-child(6) {
-    top: 80%;
-    left: 70%;
-    animation: animate 12s linear infinite;
-}
-.box div:nth-child(7) {
-    top: 60%;
-    left: 80%;
-    animation: animate 15s linear infinite;
-}
-.box div:nth-child(8) {
-    top: 32%;
-    left: 25%;
-    animation: animate 16s linear infinite;
-}
-.box div:nth-child(9) {
-    top: 90%;
-    left: 25%;
-    animation: animate 9s linear infinite;
-}
-.box div:nth-child(10) {
-    top: 20%;
-    left: 80%;
-    animation: animate 5s linear infinite;
-}
+
+.box div:nth-child(1) { top: 12%; left: 42%; animation-duration: 10s; }
+.box div:nth-child(2) { top: 70%; left: 50%; animation-duration: 7s; }
+.box div:nth-child(3) { top: 17%; left: 6%; animation-duration: 9s; }
+.box div:nth-child(4) { top: 20%; left: 60%; animation-duration: 10s; }
+.box div:nth-child(5) { top: 67%; left: 10%; animation-duration: 6s; }
+.box div:nth-child(6) { top: 80%; left: 70%; animation-duration: 12s; }
+.box div:nth-child(7) { top: 60%; left: 80%; animation-duration: 15s; }
+.box div:nth-child(8) { top: 32%; left: 25%; animation-duration: 16s; }
+.box div:nth-child(9) { top: 90%; left: 25%; animation-duration: 9s; }
+.box div:nth-child(10) { top: 20%; left: 80%; animation-duration: 5s; }
+
 @keyframes animate {
-    0% {
-        transform: scale(0) translateY(0) rotate(0);
-        opacity: 1;
+    0% { transform: scale(0) translateY(0) rotate(0); opacity: 1; }
+    100% { transform: scale(1.5) translateY(-80px) rotate(360deg); opacity: 0; }
+}
+
+@media only screen and (max-width: 815px) {
+    .main {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
     }
-    100% {
-        transform: scale(1.3) translateY(-90px) rotate(360deg);
-        opacity: 0;
+
+    h1 {
+        font-size: 24px; /* Responsive font size */
+    }
+
+    p {
+        font-size: 16px; /* Responsive font size */
+    }
+}
+
+@media only screen and (max-height: 635px) {
+    .main {
+        margin-top: 5%;
+        padding: 20px;
     }
 }

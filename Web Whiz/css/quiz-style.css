@@ -1,228 +1,265 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box; 
 }
+
 .background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: url(../assets/image\ 3.png);
-    z-index: 0;
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+    background: url(../assets/image\ 3.png); 
+    z-index: 0; 
 }
 
 /* App Interface */
 .app {
-    background: #fff;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: #fff; 
+    width: 90%; 
+    max-width: 600px; 
+    margin: 100px auto 0; 
+    border-radius: 10px; 
+    padding: 30px; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .app h1 {
-    font-size: 25px;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+    font-size: 25px; 
+    color: #001e4d; 
+    font-weight: 600; 
+    border-bottom: 1px solid #333; 
+    padding-bottom: 30px; 
 }
 
 .app, .btn, .quiz {
-    z-index: 2;
-    position: relative;
+    z-index: 2; 
+    position: relative; 
 }
 
-/* Quiz */
 .quiz {
-    padding: 20px 0;
+    padding: 20px 0; 
 }
+
 .quiz h2 {
-    font-size: 20px;
-    color: #001e4d;
-    font-weight: 600;
+    font-size: 20px; 
+    color: #001e4d; 
+    font-weight: 600; 
 }
 
 /* Button Styling */
 .btn {
-    background: #fff;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
+    background: #fff; 
+    color: #222; 
+    font-weight: 500; 
+    width: 100%; 
+    border: 1px solid #222; 
+    padding: 10px; 
+    margin: 10px 0; 
+    text-align: left; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: all 0.3s; 
 }
+
 .btn:hover {
-    background: #222;
-    color: #fff;
+    background: #222; 
+    color: #fff; 
 }
 
 .correct {
-    background-color: #4CAF50; /* Groen voor goede antwoorden */
-    color: white; /* Witte text */
+    background-color: #4CAF50; 
+    color: white; 
 }
 
 .incorrect {
-    background-color: #f44336; /* Rood voor foute antwoorden */
-    color: white; /* Witte text */
+    background-color: #f44336; 
+    color: white; 
 }
+
 .correct:hover {
-    background-color: #45a049 !important; /* Donker groen voor goede antwoorden on hover */
+    background-color: #45a049 !important; 
 }
 
 .incorrect:hover {
-    background-color: #d32f2f !important; /* Donker rood voor foute antwoorden on hover */
+    background-color: #d32f2f !important; 
 }
 
-#next-btn {
-    background: #001e4d; /* Zwart achtergrond */
+#next-btn, #go-back-btn, #home-page, #restart-btn {
+    background: #001e4d; 
     color: #fff; 
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
+    font-weight: 500; 
+    width: 150px; 
+    border: 0; 
+    padding: 10px; 
+    margin: 20px auto 0; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    display: block; 
 }
-#go-back-btn {
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
+
+#resultaat {
+    width: 100%; 
+    height: 300px; 
 }
-#home-page {
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-}
-#restart-btn {
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block;
-}
+
 #resultaat h2 {
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    text-decoration: underline;
-    display: block;
-    text-align: center;
+    background: #001e4d; 
+    color: #fff; 
+    font-weight: 500; 
+    width: 150px; 
+    border: 0; 
+    padding: 10px; 
+    margin: 20px auto 0; 
+    border-radius: 4px; 
+    text-decoration: underline; 
+    display: block; 
+    text-align: center; 
 }
+
 #resultaat p {
-    color: #000;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 4px;
-    display: block;
-    border: 1px solid #000;
+    color: #000; 
+    font-weight: 500; 
+    width: 150px; 
+    border: 0; 
+    padding: 10px; 
+    margin: 20px auto 0; 
+    border-radius: 4px; 
+    display: block; 
+    border: 1px solid #000; 
+}
+
+#resultaat-rechts {
+    width: 40%; 
+    float: left; 
+}
+
+#leaderboard {
+    width: 25%; 
+    float: left; 
+    margin-right: 40px; 
+}
+
+#leaderboard ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+#leaderboard li {
+    font-size: 1.1em; 
+    margin: 5px 0; 
+}
+
+#name-entry {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+#player-name {
+    padding: 10px; 
+    margin: 10px 0; 
+    width: 80%; 
+    max-width: 300px; 
+}
+
+#start-btn {
+    background: #001e4d; 
+    color: #fff; 
+    font-weight: 500; 
+    width: 150px; 
+    border: 0; 
+    padding: 10px; 
+    margin: 5px auto 0; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    display: block; 
 }
 
 /* Animations */
-
 .box div {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    border: 6px solid rgba(255,255,255,0.8);
-    z-index: 1;
-    pointer-events: none;
+    position: absolute; 
+    width: 60px; 
+    height: 60px; 
+    background-color: transparent; 
+    border: 6px solid rgba(255,255,255,0.8); 
+    z-index: 1; 
+    pointer-events: none; 
 }
+
 .box div:nth-child(1) {
-    top: 12%;
-    left: 42%;
-    animation: animate 10s linear infinite;
+    top: 12%; 
+    left: 42%; 
+    animation: animate 10s linear infinite; 
 }
+
 .box div:nth-child(2) {
-    top: 70%;
-    left: 50%;
-    animation: animate 7s linear infinite;
+    top: 70%; 
+    left: 50%; 
+    animation: animate 7s linear infinite; 
 }
+
 .box div:nth-child(3) {
-    top: 17%;
-    left: 6%;
-    animation: animate 9s linear infinite;
+    top: 17%; 
+    left: 6%; 
+    animation: animate 9s linear infinite; 
 }
+
 .box div:nth-child(4) {
-    top: 20%;
-    left: 60%;
-    animation: animate 10s linear infinite;
+    top: 20%; 
+    left: 60%; 
+    animation: animate 10s linear infinite; 
 }
+
 .box div:nth-child(5) {
-    top: 67%;
-    left: 10%;
-    animation: animate 6s linear infinite;
+    top: 67%; 
+    left: 10%; 
+    animation: animate 6s linear infinite; 
 }
+
 .box div:nth-child(6) {
-    top: 80%;
-    left: 70%;
-    animation: animate 12s linear infinite;
+    top: 80%; 
+    left: 70%; 
+    animation: animate 12s linear infinite; 
 }
+
 .box div:nth-child(7) {
-    top: 60%;
-    left: 80%;
-    animation: animate 15s linear infinite;
+    top: 60%; 
+    left: 80%; 
+    animation: animate 15s linear infinite; 
 }
+
 .box div:nth-child(8) {
-    top: 32%;
-    left: 25%;
-    animation: animate 16s linear infinite;
+    top: 32%; 
+    left: 25%; 
+    animation: animate 16s linear infinite; 
 }
+
 .box div:nth-child(9) {
-    top: 90%;
-    left: 25%;
-    animation: animate 9s linear infinite;
+    top: 90%; 
+    left: 25%; 
+    animation: animate 9s linear infinite; 
 }
+
 .box div:nth-child(10) {
-    top: 20%;
-    left: 80%;
-    animation: animate 5s linear infinite;
+    top: 20%; 
+    left: 80%; 
+    animation: animate 5s linear infinite; 
 }
+
 @keyframes animate {
     0% {
-        transform: scale(0) translateY(0) rotate(0);
-        opacity: 1;
+        transform: scale(0) translateY(0) rotate(0); 
+        opacity: 1; 
     }
     100% {
-        transform: scale(1.3) translateY(-90px) rotate(360deg);
-        opacity: 0;
+        transform: scale(1.3) translateY(-90px) rotate(360deg); 
+        opacity: 0; 
     }
 }

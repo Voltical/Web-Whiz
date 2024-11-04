@@ -95,30 +95,45 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
-let correctAnswersCount = 0; // Om bij te houden hoeveel juiste antwoorden er zijn gegeven
-let answeredQuestions = Array(questions.length).fill(false); // Bijhouden of vragen correct beantwoord zijn
+let correctAnswersCount = 0;
+let leaderboard = [];
+
+// Variabele om de spelernaam op te slaan
+let playerName = "";
 
 // DOM elementen
+const nameEntryElement = document.getElementById('name-entry');
+const playerNameInput = document.getElementById('player-name');
+const startButton = document.getElementById('start-btn');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
-const goBackButton = document.getElementById('go-back-btn'); // Nieuwe Ga Terug knop
-const resultaatElement = document.getElementById('resultaat'); // Resultaten sectie
-const resultaatTextElement = document.getElementById('resultaat-text'); // Resultaten tekst
-const restartButton = document.getElementById('restart-btn'); // Opnieuw spelen knop
+const quizContainer = document.getElementById('quiz-container');
+const resultaatElement = document.getElementById('resultaat');
+const resultaatTextElement = document.getElementById('resultaat-text');
+const restartButton = document.getElementById('restart-btn');
 
 // Start de quiz
 function startQuiz() {
+    playerName = playerNameInput.value.trim(); // Haal de naam op uit het invoerveld
+
+    if (playerName === "") {
+        alert("Voer alstublieft een naam in om verder te gaan.");
+        return;
+    }
+
+    nameEntryElement.style.display = "none"; // Verberg de naam invoer sectie
+    quizContainer.style.display = "block"; // Toon de quiz sectie
+
     currentQuestionIndex = 0;
-    correctAnswersCount = 0; 
-    answeredQuestions.fill(false); // Reset answeredQuestions bij start
+    correctAnswersCount = 0;
     showQuestion(questions[currentQuestionIndex]);
 }
 
 // Toon een vraag
 function showQuestion(question) {
     questionElement.innerText = question.question;
-    answerButtonsElement.innerHTML = ''; // Clear previous answers
+    answerButtonsElement.innerHTML = ''; // Verwijder vorige antwoorden
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -132,15 +147,19 @@ function showQuestion(question) {
 function selectAnswer(answer, selectedButton) {
     const correct = answer.correct;
 
-    // Controleer of het antwoord correct is en nog niet eerder goed beantwoord is
-    if (correct && !answeredQuestions[currentQuestionIndex]) {
+    if (correct) {
         selectedButton.classList.add('correct');
         correctAnswersCount++;
-        answeredQuestions[currentQuestionIndex] = true; // Markeer vraag als correct beantwoord
-        document.getElementById('go-back-btn').style.display="none";
-    } else if (!correct) {
+    } else {
         selectedButton.classList.add('incorrect');
-        document.getElementById('go-back-btn').style.display="block";
+        // Toon het correcte antwoord in groen
+        const correctButton = Array.from(answerButtonsElement.children).find(button => {
+            const answerText = button.innerText;
+            return questions[currentQuestionIndex].answers.some(a => a.text === answerText && a.correct);
+        });
+        if (correctButton) {
+            correctButton.classList.add('correct');
+        }
     }
     
     // Schakel alle knoppen uit na selectie
@@ -149,7 +168,7 @@ function selectAnswer(answer, selectedButton) {
         button.disabled = true; // Deactiveer alle knoppen
     });
 
-    document.getElementById('next-btn').style.display="block"; // Toon de volgende knop
+    document.getElementById('next-btn').style.display = "block"; // Toon de volgende knop
 }
 
 // Ga naar de volgende vraag
@@ -157,8 +176,7 @@ function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion(questions[currentQuestionIndex]);
-        document.getElementById('next-btn').style.display="none"; // Verberg volgende knop voor nieuwe vraag
-        document.getElementById('go-back-btn').style.display="none"; // Verberg Ga Terug knop
+        document.getElementById('next-btn').style.display = "none"; // Verberg de volgende knop voor nieuwe vraag
     } else {
         // Quiz is voltooid, toon resultaten
         showResults();
@@ -167,42 +185,43 @@ function nextQuestion() {
 
 // Toon resultaten aan het einde van de quiz
 function showResults() {
-    const quizElements = document.getElementsByClassName('quiz');
-    for (let i = 0; i < quizElements.length; i++) {
-        quizElements[i].style.display = "none"; // Verberg alle elementen met de klasse 'quiz'
-    }
-    document.getElementById('next-btn').style.display="none"; // Verberg de volgende knop
-    document.getElementById('go-back-btn').style.display="none"; // Verberg de ga terug knop
-
+    quizContainer.style.display = "none"; // Verberg de quiz
     resultaatTextElement.innerText = `Je hebt ${correctAnswersCount} van de ${questions.length} vragen goed beantwoord!`;
-    document.getElementById('resultaat').style.display="block"; // Toon de resultaten sectie
+    resultaatElement.style.display = "block"; // Toon de resultaten
+
+    updateLeaderboard();
+    displayLeaderboard();
 }
 
 // Herstart de quiz
 function restartQuiz() {
-    const quizElements = document.getElementsByClassName('quiz');
-    for (let i = 0; i < quizElements.length; i++) {
-        quizElements[i].style.display = "block"; // Verberg alle elementen met de klasse 'quiz'
-    }
-    document.getElementById('resultaat').style.display="none"; // Verberg resultaten sectie
-    startQuiz(); // Herstart de quiz
+    resultaatElement.style.display = "none"; // Verberg de resultaten
+    nameEntryElement.style.display = "block"; // Toon de naam invoer sectie
+    playerNameInput.value = ""; // Leeg het naam invoerveld
+}
+
+// Voeg score met naam toe aan het leaderboard
+function updateLeaderboard() {
+    leaderboard.push({ name: playerName, score: correctAnswersCount });
+    leaderboard.sort((a, b) => b.score - a.score);
+}
+
+function displayLeaderboard() {
+    const leaderboardElement = document.getElementById('leaderboard');
+    leaderboardElement.style.display = "block"; // Toon het leaderboard
+    leaderboardElement.innerHTML = "<h3>Leaderboard</h3>";
+
+    const scoreList = document.createElement('ul');
+    leaderboard.slice(0, 5).forEach((entry, index) => {
+        const scoreItem = document.createElement('li');
+        scoreItem.innerText = `#${index + 1}: ${entry.name} - ${entry.score} punten`;
+        scoreList.appendChild(scoreItem);
+    });
+    
+    leaderboardElement.appendChild(scoreList);
 }
 
 // Event listeners
+startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
-goBackButton.addEventListener('click', () => { 
-    showQuestion(questions[currentQuestionIndex]); // Toon dezelfde vraag opnieuw
-    document.getElementById('next-btn').style.display="none";
-    document.getElementById('go-back-btn').style.display="none";
-
-    // Verwijder een punt als de vraag eerder correct was beantwoord
-    if (answeredQuestions[currentQuestionIndex]) {
-        correctAnswersCount--; 
-        answeredQuestions[currentQuestionIndex] = false; // Reset correct antwoord status
-    }
-});
-
-restartButton.addEventListener('click', restartQuiz); // Voeg event listener toe voor de opnieuw spelen knop
-
-// Start de quiz wanneer de pagina laadt
-startQuiz();
+restartButton.addEventListener('click', restartQuiz);

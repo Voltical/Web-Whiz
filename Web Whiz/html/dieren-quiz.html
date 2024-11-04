@@ -2,48 +2,59 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/quiz-style.css">
+    <script src="https://kit.fontawesome.com/bb89b598a6.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PubQuiz | Dieren Quiz</title>
 </head>
 <body>
-<!--Dieren Quiz-->
-<div class="background">
-    <div class="app">
-        <h1>Dieren Quiz</h1>
-        <!--Quiz Interface-->
-        <div class="quiz" style="display: block;">
-            <h2 id="question">Vraag gaat hier</h2>
-            <div id="answer-buttons">
-                <button class="btn">Antwoord 1</button>
-                <button class="btn">Antwoord 2</button>
-                <button class="btn">Antwoord 3</button>
-                <button class="btn">Antwoord 4</button>
+    <!-- Dieren Quiz -->
+    <div class="background">
+        <div class="app">
+            <h1>Dieren Quiz</h1>
+            <!-- Naam Invoer -->
+            <div id="name-entry">
+                <h3>Voer je naam in om te starten</h3>
+                <input autocomplete="off" type="text" id="player-name" placeholder="Jouw naam">
+                <button id="start-btn"><i class="fa-solid fa-play"></i> Start Quiz</button>
+                <button id="home-page" onclick="window.location.href='../index.html'"><i class="fa-solid fa-arrow-left"></i> Terug</button>
             </div>
-            <button id="next-btn" style="display: none;">Volgende</button>
-            <button id="go-back-btn" style="display: none;">Ga Terug</button> <!-- Ga Terug knop -->
-        </div>
-        <!-- Resultaten sectie -->
-        <div id="resultaat" style="display: none;">
-            <h2>Resultaten</h2>
-            <p id="resultaat-text"></p>
-            <button id="restart-btn">Opnieuw Spelen</button> <!-- Opnieuw spelen knop -->
-            <button id="home-page" onclick="window.location.href='../index.html'"><i class="fa-solid fa-rotate-right"></i>Terug</button>
+            <!-- Quiz Interface -->
+            <div class="quiz" id="quiz-container" style="display: none;">
+                <h2 id="question">Vraag gaat hier</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Antwoord 1</button>
+                    <button class="btn">Antwoord 2</button>
+                    <button class="btn">Antwoord 3</button>
+                    <button class="btn">Antwoord 4</button>
+                </div>
+                <button id="next-btn" style="display: none;">Volgende</button>
+                <button id="go-back-btn" style="display: none;">Ga Terug</button> <!-- Ga Terug knop -->
+            </div>
+            <!-- Resultaten sectie -->
+            <div id="resultaat" style="display: none;">
+                <div id="leaderboard"></div>
+                <div id="resultaat-rechts">
+                    <h2>Resultaten</h2>
+                    <p id="resultaat-text"></p>
+                    <button id="restart-btn"><i class="fa-solid fa-rotate-right"></i> Opnieuw Spelen</button>
+                    <button id="home-page" onclick="window.location.href='../index.html'"><i class="fa-solid fa-arrow-left"></i> Terug</button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-<script src="../js/dieren.script.js"></script>
+    <!-- Achtergrond animatie elementen -->
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script src="../js/dieren.script.js"></script>
 </body>
 </html>

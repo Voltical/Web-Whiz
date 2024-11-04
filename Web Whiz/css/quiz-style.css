@@ -9,8 +9,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: rgb(216,0,95);
-    background: linear-gradient(135deg, rgba(216,0,95,1) 10%, rgba(215,68,0,1) 100%);
+    background: url(../assets/image\ 3.png);
     z-index: 0;
 }
 
@@ -22,6 +21,7 @@
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .app h1 {
     font-size: 25px;
@@ -106,7 +106,7 @@
     cursor: pointer;
     display: block;
 }
-#resultaat h2, p {
+#home-page {
     background: #001e4d;
     color: #fff;
     font-weight: 500;
@@ -117,7 +117,42 @@
     border-radius: 4px;
     cursor: pointer;
     display: block;
+}
+#restart-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+#resultaat h2 {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    text-decoration: underline;
+    display: block;
     text-align: center;
+}
+#resultaat p {
+    color: #000;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid #000;
 }
 
 /* Animations */

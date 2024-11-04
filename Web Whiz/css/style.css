@@ -105,7 +105,6 @@
     height: 80px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
     padding: 10px;
-    margin: 10px 0;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -117,6 +116,9 @@
 .btn:hover {
     background: #fff;
     color: #000;
+}
+.btn i {
+    font-size: xx-large;
 }
 
 #readmore {
@@ -209,5 +211,14 @@
     }
     .buttons {
         height: 20%;
+    }
+}
+@media only screen and (max-height: 635px) {
+    .main {
+        height: 90%;
+        margin-top: 3%;
+    }
+    .btn i {
+        font-size: xx-large;
     }
 }

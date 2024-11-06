@@ -45,7 +45,7 @@ Web Whiz/
 ## Screenshots
 
 ### Startpagina
-![Screenshot Startpagina](https://imgur.com/S12rF5g)
+![Screenshot Startpagina](https://i.postimg.cc/GTwFP1gn/Screenshot-2024-11-06-091319.png)
 
 ### Quiz Interface
 ![Screenshot Quiz](https://imgur.com/UagPdOn)

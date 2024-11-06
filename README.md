@@ -45,10 +45,10 @@ Web Whiz/
 ## Screenshots
 
 ### Startpagina
-![Screenshot Startpagina](https://cdn.discordapp.com/attachments/1300768520698859550/1300768551920992296/Home.png?ex=67220a9d&is=6720b91d&hm=7362259cb788ca426e92c842982d804249c0ce1b9790ca8656a57a77649677fe&)
+![Screenshot Startpagina](https://imgur.com/S12rF5g)
 
 ### Quiz Interface
-![Screenshot Quiz](https://cdn.discordapp.com/attachments/1300768520698859550/1300768552416055296/QuizInterface.png?ex=67220a9e&is=6720b91e&hm=191855265446062c186cfec065ddf52e6ece433b774ed434d55e0954ba39bae9&)
+![Screenshot Quiz](https://imgur.com/UagPdOn)
 
 ## Bijdragen
 

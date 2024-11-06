@@ -50,6 +50,9 @@ Web Whiz/
 ### Quiz Interface
 ![Screenshot Quiz](https://cdn.discordapp.com/attachments/1300768520698859550/1303634899135107144/Screenshot_2024-11-06_091510.png?ex=672c781c&is=672b269c&hm=5c22909dd4e8819b4891e14a75243dd5ed8c3cd3ffffdeb8e733db87cfa68682&)
 
+### Quiz Resultaten
+![Screenshot Quiz](https://cdn.discordapp.com/attachments/1301104047440396320/1303641676962861066/Schermafbeelding_2024-11-06_094358.png?ex=672c7e6c&is=672b2cec&hm=48f90da91b7420421feaa272d73f41ed7770c3a0fc8ddca4cfc2289f7662a2a6&)
+
 ## Bijdragen
 
 Bijdragen zijn welkom! Voel je vrij om een pull request in te dienen of een issue te openen om verbeteringen voor te stellen of bugs te melden.

@@ -48,7 +48,7 @@ Web Whiz/
 ![Screenshot Startpagina](https://cdn.discordapp.com/attachments/1300768520698859550/1303634899617714187/Screenshot_2024-11-06_091319.png?ex=672c781c&is=672b269c&hm=dfae37e54c44b292f0eb7c49680832941824cc6ae54cd6eaecc92a89b2df4213&)
 
 ### Quiz Interface
-![Screenshot Quiz](https://imgur.com/UagPdOn)
+![Screenshot Quiz](https://cdn.discordapp.com/attachments/1300768520698859550/1303634899135107144/Screenshot_2024-11-06_091510.png?ex=672c781c&is=672b269c&hm=5c22909dd4e8819b4891e14a75243dd5ed8c3cd3ffffdeb8e733db87cfa68682&)
 
 ## Bijdragen
 

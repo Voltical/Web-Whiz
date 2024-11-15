@@ -51,7 +51,7 @@ Web Whiz/
 ![Screenshot Quiz](https://boytoy.lol/yixtholl.png)
 
 ### Quiz Start
-![Screenshot Quiz Start](https://boytoy.lol/enxylk4v.png)
+![Screenshot Quiz Start](https://r2.e-z.host/206416db-dbc6-4665-b5fd-ae63a22c6cf9/enxylk4v.png)
 
 ## Bijdragen
 

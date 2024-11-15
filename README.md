@@ -45,13 +45,13 @@ Web Whiz/
 ## Screenshots
 
 ### Startpagina
-![Screenshot Startpagina](https://cdn.discordapp.com/attachments/1300768520698859550/1303634899617714187/Screenshot_2024-11-06_091319.png?ex=672c781c&is=672b269c&hm=dfae37e54c44b292f0eb7c49680832941824cc6ae54cd6eaecc92a89b2df4213&)
+![Screenshot Startpagina](https://boytoy.lol/vyb5uxuy.png)
 
 ### Quiz Interface
-![Screenshot Quiz](https://cdn.discordapp.com/attachments/1300768520698859550/1303634899135107144/Screenshot_2024-11-06_091510.png?ex=672c781c&is=672b269c&hm=5c22909dd4e8819b4891e14a75243dd5ed8c3cd3ffffdeb8e733db87cfa68682&)
+![Screenshot Quiz](https://boytoy.lol/yixtholl.png)
 
-### Quiz Resultaten
-![Screenshot Quiz](https://cdn.discordapp.com/attachments/1301104047440396320/1303641676962861066/Schermafbeelding_2024-11-06_094358.png?ex=672c7e6c&is=672b2cec&hm=48f90da91b7420421feaa272d73f41ed7770c3a0fc8ddca4cfc2289f7662a2a6&)
+### Quiz Start
+![Screenshot Quiz Start](https://boytoy.lol/enxylk4v.png)
 
 ## Bijdragen
 
